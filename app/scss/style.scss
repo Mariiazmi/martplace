@@ -196,8 +196,40 @@
         left: 15px;
     }
     &-2 {
-        max-width: 1080px;
+        max-width: 1070px;
         height: 60px;
-        top: -30px;
+        top: -29px;
     }
 }
+// end banner
+
+// start benefits
+.benefits {
+    padding-top: 190px;
+    padding-bottom: 125px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.benefit__item {
+    max-width: 365px;
+    padding: 45px 40px;
+    text-align: center;
+    &:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+    &-img {
+        margin-bottom: 35px;
+    }
+    &-title {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+}
+// end benefits
+
+// start featured products
+
+// end featured products
