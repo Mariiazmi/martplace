@@ -107,3 +107,97 @@
     }
 }
 // header end
+
+// start banner
+.banner {
+    position: relative;
+    padding-top: 175px;
+    padding-bottom: 230px;
+    text-align: center;
+    color: #fff;
+    background-color: $blue;
+    background: linear-gradient(180deg, #0030de 0%, #1745ed 54%, #2e5afb 100%);
+    &__title {
+        margin: 0;
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 400;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__text {
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__search {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: -70px;
+        max-width: 1140px;
+        width: 100%;
+        padding: 40px 35px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, .08);
+        .btn {
+            width: 225px;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+    
+}
+.banner__search-input {
+    position: relative;
+    max-width: 810px;
+    width: 100%;
+    input {
+        max-width: 810px;
+        width: 100%;
+        padding: 15px 40px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+    } 
+}
+.banner__select {
+    position: absolute;
+    right: 0;
+    padding: 13px 40px;
+    padding-left: 20px;
+    border: none;
+    border-left: 1px solid #dcdcdc;
+    background-color: transparent;
+    &:after {
+        position: relative;
+        top: 0;
+        content: '';
+        width: 13px;
+        height: 8px;
+        background-color: red;
+        background-image: url(../img/icons/arrow-down.png);
+        z-index: 1000;
+    }
+}
+.banner__search-bg {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    opacity: 50%;
+    border-radius: 5px;
+    &-1 {
+        max-width: 1110px;
+        height: 30px;
+        top: -15px;
+        left: 15px;
+    }
+    &-2 {
+        max-width: 1080px;
+        height: 60px;
+        top: -30px;
+    }
+}
