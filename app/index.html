@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MartPlace</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a class="header__logo" href="#">
+                        <img src="img/header-logo.png" alt="martplace logo">
+                        <span>Mart</span>
+                        <span class="header__logo-blue">Place</span>
+                    </a>
+                    <div class="header__top-box">
+                        <a class="btn" href="#">Become a Seller</a>
+                        <div class="header__top-buttons">
+                           <a class="header__top-buttons alarm" href="#">Alarm</a>
+                            <a class="header__top-buttons mail" href="#">Mail</a>
+                            <a class="header__top-buttons basket" href="#">Basket</a> 
+                        </div>
+                        <a class="header__top-avatar" href="#">
+                            <img src="" alt="">
+                            <div class="header__top-avatar-info">
+                                <span class="avatar__name">Taofiq Hakim</span>
+                                <span class="avatar__price">$20.45</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">All products</a></li>
+                            <li><a href="#">Wordpress</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                    <form action="" class="header__search">
+                        <input type="text" placeholder="Search product here...">
+                        <button type="submit">
+                            <img src="img/icons/search.png" alt="Search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
