@@ -581,7 +581,8 @@
         width: 50%;
         padding: 100px 0;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position: bottom;
         .btn {
             background-color: #fff;
             color: $blue;
@@ -618,5 +619,67 @@
 // end start section
 
 // start feedback
-
+.feedback {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    text-align: center;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__item {
+        padding: 50px 40px;
+        max-width: 555px;
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-left: 2px solid $blue;
+        text-align-last: left;
+        &:hover {
+            border-left: 4px solid $blue;
+        }
+        &-author {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 60px;
+                font-family: 'Linearicons-Free';
+                content: "\e83f";
+                width: 65px;
+                height: 55px;
+                color: #e8e8e8;
+            }
+            img {
+                margin-right: 25px;
+                width: 80px;
+                height: 80px;
+                background-color: $avatar;
+                border-radius: 50%;
+            }
+            &-info {
+                span {
+                  display: block;  
+                }
+            }
+        }
+        &-text {
+            text-align: left;
+            max-width: 470px;
+            width: 100%;
+        }
+        &-name {
+            font-size: 20px;
+            color: #000;
+        }
+    }
+}
 // end feedback
+
+  
