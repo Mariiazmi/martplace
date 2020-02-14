@@ -243,6 +243,99 @@ button {
     border-bottom-right-radius: 30px;
 }
 
+.general__input {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    & input {
+        padding: 15px 30px;
+        width: 100%;
+        border: 1px solid #d9dfe5;
+        border-radius: 30px;
+        outline: none;
+        &::placeholder {
+            color: #898f96;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+    button {
+        position: absolute;
+        right: 0;
+        padding: 15px 30px;
+        background-color: $blue;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+    }
+}
+
+.socials {
+    li {
+        display: inline-block;
+        font-size: 0;
+        & +li {
+            margin-left: 15px;
+        }
+        a {
+            display: block;
+            position: relative;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            color: #fff;
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                font-family: 'icomoon';
+                width: 20px;
+                height: 20px;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }
+    &-fb {
+        background-color: #395799;
+        &:before {
+            content: "\f09a";
+        }
+    }
+    &-tw {
+        background-color: #19b2f5;
+        &:before {
+            content: "\f099";
+        }
+    }
+    &-g {
+        background-color: #f05b44;
+        &:before {
+            content: "\f1a0";
+        }
+    }
+    &-pint {
+        background-color: #9c0c1c;
+        &:before {
+            content: "\f0d2";
+        }
+    }
+    &-in {
+        background-color: #0da6be;
+        &:before {
+            content: "\f0e1";
+        }
+    }
+    &-dr {
+        background-color: #ea4c89;
+        &:before {
+            content: "\f17d";
+        }
+    }
+}
+
 @media (max-width:720px) {
     .container-fluid {
         padding: 0 15px;

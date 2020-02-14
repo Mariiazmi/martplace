@@ -87,30 +87,7 @@
         }
     }
 }
-.header__search {
-    position: relative;
-    max-width: 360px;
-    width: 100%;
-    & input {
-        padding: 15px 30px;
-        width: 100%;
-        border: 1px solid #d9dfe5;
-        border-radius: 30px;
-        outline: none;
-        &::placeholder {
-            color: #898f96;
-            font-family: 'Quicksand', sans-serif;
-        }
-    }
-    button {
-        position: absolute;
-        right: 0;
-        padding: 15px 30px;
-        background-color: $blue;
-        border: none;
-        border-radius: 30px;
-    }
-}
+
 // header end
 
 // start banner
@@ -761,4 +738,167 @@
 }
 // end news
 
-  
+// start support
+.support__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.support__item {
+    width: 50%;
+    padding-top: 65px;
+    padding-bottom: 55px;
+    text-align: center;
+    font-size: 24px;
+    p {
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 155px;
+    }
+    &-blue {
+        border-right: 1px solid #ececec;
+        span {
+           color: $blue; 
+        }
+    }
+    &-violet {
+        span {
+          color: $violet;  
+        }
+    }
+}
+// end support
+
+// start join us
+.join {
+    padding: 110px 0;
+    text-align: center;
+    color: #fff;
+    background-color: $blue;
+    background: linear-gradient( -90deg, rgb(13,62,242) 25%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    .btn {
+        background-color: #fff;
+        color: $blue;
+        border: 1px solid white;
+        &:hover {
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+    .section__title {
+        color: #fff;
+    }
+    p {
+        margin-bottom: 45px;
+    }
+}
+// end join us
+
+// start footer
+.footer {
+    font-size: 15px;
+    &__top {
+        padding-top: 115px;
+        padding-bottom: 120px;
+        background-color: #262b30;
+        color: #999999;
+    }
+    &__bottom {
+        padding: 30px 0;
+        text-align: center;
+        color: #999999;
+        background-color: #192027;
+        span {
+            color: #fff;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__col {
+        &-medium {
+            max-width: 270px;
+            width: 100%;
+        }
+        &-wide {
+            max-width: 370px;
+            width: 100%;  
+        }
+        &-menu {
+            max-width: 150px;
+            width: 100%;
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        img {
+            margin-right: 5px;
+        }
+        &-blue {
+            color: $blue;
+        }
+    }
+    &__text {
+        margin-bottom: 20px;
+    }
+    a{
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__icons {
+        padding-left: 25px;
+        margin-bottom: 7px;
+        position: relative;
+        &:before {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            font-size: 15px;
+            font-family: 'Linearicons-Free';
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &-phone {
+            &:before {
+                content: "\e830";
+            }
+        } 
+        &-mail {
+            &:before {
+                content: "\e818";
+            }
+            
+        }
+        &-address {
+            &:before {
+                content: "\e833";
+                top: 20px;
+            }
+        }
+    }
+    &__title {
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    & button {
+        padding: 16px 30px;
+        right: -2px;
+    }
+    .general__input {
+        margin-bottom: 50px;
+    }
+}
+// end footer
