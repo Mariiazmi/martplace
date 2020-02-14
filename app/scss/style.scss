@@ -91,15 +91,15 @@
     position: relative;
     max-width: 360px;
     width: 100%;
-    input {
+    & input {
         padding: 15px 30px;
         width: 100%;
         border: 1px solid #d9dfe5;
         border-radius: 30px;
         outline: none;
         &::placeholder {
-        color: #898f96;
-        font-family: 'Quicksand', sans-serif;
+            color: #898f96;
+            font-family: 'Quicksand', sans-serif;
         }
     }
     button {
@@ -280,6 +280,7 @@
         color: #000;
         font-size: 24px;
         line-height: 30px;
+        font-weight: 500;
     }
     &-contact {
         display: flex;
@@ -681,5 +682,83 @@
     }
 }
 // end feedback
+
+// start news
+.news {
+    padding: 115px;
+    background-color: $grey;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        &-img {
+            display: block;
+            height: 230px;
+            background-color: #7385cd;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        &-info {
+            padding: 25px 30px;
+            border-bottom: 1px solid #ececec;
+        }
+        &-title {
+            margin: 0;
+            margin-bottom: 25px;
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 500;
+        }
+        &-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            &-icon {
+                position: relative;
+                padding-left: 25px;
+                font-size: 15px;
+                color: #7e7e7e;
+                    &:before {
+                        position: absolute;
+                        top: 6px;
+                        left: 0;
+                        font-size: 60px;
+                        font-family: 'Linearicons-Free';
+                        width: 15px;
+                        height: 15px;
+                        font-size: 15px;
+                        line-height: 15px;
+                } 
+            }
+            &-date {
+                padding-right: 45px;
+                border-right: 1px solid #ececec;
+                &:before {
+                    content: "\e864";
+                    color: $blue;
+                }
+            }
+            &-coments {
+                &:before {
+                    content: "\e83f";
+                }
+            }
+            &-views {
+                &:before {
+                    content: "\e81b";
+                }
+            }
+        }
+    }
+}
+// end news
 
   

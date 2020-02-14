@@ -124,6 +124,8 @@ button {
     &-title {
         margin: 0;
         margin-bottom: 10px;
+        font-weight: 500;
+        color: #000;
         &:hover a {
             text-decoration: underline;
         }
