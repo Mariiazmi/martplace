@@ -159,13 +159,38 @@
 .lnr-magnifier:before {
 	content: "\e86f";
 }
+.lnr-home:before {
+	content: "\e800";
+}
+.lnr-cog:before {
+	content: "\e810";
+}
+.lnr-dice:before {
+	content: "\e812";
+}
+.lnr-cloud-upload:before {
+	content: "\e80a";
+}
+.lnr-book:before {
+	content: "\e828";
+}
+.lnr-exit:before {
+	content: "\e820";
+}
+
+
+
+
+
+
+
+
+
 
 
 
 // don`t need
-.lnr-home:before {
-	content: "\e800";
-}
+
 .lnr-apartment:before {
 	content: "\e801";
 }
@@ -205,13 +230,9 @@
 	content: "\e80e";
 }
 
-.lnr-cog:before {
-	content: "\e810";
-}
 
-.lnr-dice:before {
-	content: "\e812";
-}
+
+
 
 
 .lnr-star-half:before {
