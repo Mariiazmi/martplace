@@ -6,6 +6,10 @@ html {
 *::after {
     box-sizing: inherit;
 }
+html,
+body {
+	height: 100%;
+}
 body {
     font-size: 16px;
     line-height: 30px;
@@ -28,6 +32,22 @@ ul {
 button {
     cursor: pointer;
 }
+
+// 
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+// 
 .container {
     margin: 0 auto;
     max-width: 1175px;
@@ -91,9 +111,12 @@ button {
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     text-align: justify;
+    &-text-list {
+        display: none;
+    }
     &-img {
         width: 360px;
-        height: 230px;
+        min-height: 230px;
         background-color: $dark-blue;
         background-repeat: no-repeat;
         background-size: cover;
@@ -212,6 +235,10 @@ button {
         display: flex;
         align-items: center;
     }
+    .lnr-heart,
+    .lnr-bubble {
+        display: none;
+    }
 }
 
 .slick-arrow {
@@ -266,6 +293,7 @@ button {
         border: none;
         border-radius: 30px;
         color: #fff;
+        font-size: 15px; 
     }
 }
 
@@ -332,6 +360,30 @@ button {
         background-color: #ea4c89;
         &:before {
             content: "\f17d";
+        }
+    }
+}
+
+.breadcrumps {
+    li {
+        display: inline-block;
+        position: relative;
+        & + li {
+            padding-left: 26px;
+           &:before {
+                content: "/";
+                position: absolute;
+                left: 9px;
+                color: #fff;
+            }
+        }
+        &:last-child {
+            color: #bfcad7;
+        }
+        &:hover {
+            a, span {
+               text-decoration: underline; 
+            }
         }
     }
 }

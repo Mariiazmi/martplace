@@ -156,7 +156,9 @@
 .lnr-trash:before {
 	content: "\e811";
 }
-
+.lnr-magnifier:before {
+	content: "\e86f";
+}
 
 
 
@@ -448,9 +450,7 @@
 .lnr-thumbs-down:before {
 	content: "\e86e";
 }
-.lnr-magnifier:before {
-	content: "\e86f";
-}
+
 .lnr-cross:before {
 	content: "\e870";
 }
