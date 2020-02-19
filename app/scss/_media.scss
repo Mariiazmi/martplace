@@ -1,0 +1,122 @@
+@media (max-width:1050px) {
+    .footer__col-medium {
+        min-width: 100%;
+    }
+    .footer__icons-address:before {
+        top: 6px;
+    }
+}
+@media (max-width:1050px) {
+    header {
+        .general__input {
+            min-width: 100%;
+        }
+    }
+    .header__nav {
+        margin-bottom: 20px;
+    }
+    .header__bottom-inner {
+        justify-content: center;
+    }
+}
+@media (max-width:775px) {
+    .header__top-inner {
+        justify-content: center;
+    }
+}
+@media (max-width:750px)  {
+    .mail__box:hover .mail__list, .notification__box:hover .mail__list {
+        right: -85px;
+    }
+    .mail__box .mail__list:before, .notification__box .mail__list:before {
+        right: 87px;
+    }
+
+}
+@media (max-width:730px) {
+    .footer__col-wide {
+        min-width: 100%;
+    }
+    .footer__inner {
+        justify-content: flex-start;
+    }
+    .socials {
+        text-align: center;
+    }
+    footer {
+        .general__input {
+            margin: 0 auto;
+        }
+    }
+    .footer__top {
+        padding: 50px 0;
+    }
+}
+@media (max-width:720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
+@media (max-width:620px) {
+    .header__top-buttons {
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .header__bottom-inner {
+        justify-content: center;
+    }
+    .header__nav-list {
+        display: none;
+        li {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            & + li {
+                margin-left: 0;
+            }
+        }
+    }
+    .header__nav-burger {
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #000;
+            margin: 0 auto;
+            & + span {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+@media (max-width:470px) {
+    .footer__col-menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer__inner {
+        justify-content: space-between;
+    }
+}
+@media (max-width:450px) {
+    .header__top-box {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+@media (max-width:395px) {
+    .header__top-inner,
+    .header__bottom-inner,
+    .header__top-box {
+        justify-content: center;
+        .btn {
+            margin-right: 10px;
+        }
+    }
+}
+@media (min-width:551px) {
+    .header__nav-list {
+        display: block !important;
+    }
+}

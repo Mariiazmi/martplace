@@ -31,5 +31,11 @@ $(function(){
       $('.product__item').removeClass('list')
     });
 
+    // header__nav-burger
+    $('.header__nav-burger').on('click', function(){
+      $('.header__nav-list').slideToggle();
+    });
+
+
     var mixer = mixitup('.new__slider');
 });
