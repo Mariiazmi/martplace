@@ -2079,4 +2079,31 @@
 }
 // end 404
 
+// start how it works
+.work__step {
+    padding: 100px 0;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-info {
+        max-width: 460px;
+        width: 100%;
+    }
+    &-title {
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+    &-text {
+        margin-bottom: 25px;
+    }
+    &-reverse {
+        background-color: $grey;
+    }
+}
+// end how it works
+
 @import 'media';
