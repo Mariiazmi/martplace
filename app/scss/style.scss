@@ -2142,4 +2142,125 @@
 }
 // end Terms & Conditions
 
+// start pricing
+.pricing {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    background-color: $grey;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        transition: all .5s;
+        &-title {
+            margin: 0;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+            border-bottom: 1px solid $grey;
+        }
+        &-price {
+            margin-bottom: 35px;
+            text-align: center;
+            color: #000;
+            font-size: 36px;
+            sup {
+                font-size: 18px;
+            }
+            sub {
+                font-size: 16px;
+            }
+        }
+        &-list {
+            li {
+                display: inline-block;
+                padding-left: 25px;
+                position: relative;
+                margin-bottom: 15px;
+                span {
+                    font-weight: 500;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    background-color: #c5cad4;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 12px;
+                }
+            }
+            .lnr-question-circle {
+                position: relative;
+                &:before {
+                    position: absolute;
+                    right: -30px;
+                    font-family: 'Linearicons-Free';
+                }
+            }
+        }
+        a {
+            width: 100%;
+            padding: 15px 0;
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 500;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            transition: all .5s;
+            &:hover {
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.3);
+            }
+        }
+        &:hover {
+            box-shadow: 0px 2px 13px 0px rgba(27, 41, 59, 0.3);
+        }
+    }
+    .pricing__item-orange {
+        border-top: 3px solid #ff6a6c;
+        a {
+            background-color: #ff6a6c;
+        }
+    }
+    .pricing__item-blue {
+        border-top: 3px solid $blue;
+        a {
+            background-color: $blue;
+        }
+    }
+    .pricing__item-yellow {
+        border-top: 3px solid #feb71d;
+        a {
+            background-color: #feb71d;
+        }
+    }
+}
+// end pricing
+
 @import 'media';
+
+.Rectangle_266_copy {
+    border-radius: 4px;
+    background-color: rgb(255, 106, 108);
+    
+    position: absolute;
+    left: 420px;
+    top: 1141px;
+    width: 300px;
+    height: 50px;
+    z-index: 117;
+  }
+  

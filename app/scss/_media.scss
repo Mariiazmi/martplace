@@ -1,3 +1,13 @@
+@media (max-width:1145px) {
+    .pricing__item {
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pricing__inner {
+        justify-content: center;
+    }
+}
 @media (max-width:1050px) {
     header {
         .general__input {
@@ -41,6 +51,16 @@
     .work__step-reverse {
         img {
             order: 0;
+        }
+    }
+}
+@media (max-width:789px) {
+    .pricing__item {
+        max-width: 80%;
+        &-list {
+            li {
+                display: block;
+            }
         }
     }
 }
@@ -125,6 +145,11 @@
     }
     .login__box {
         padding: 20px;
+    }
+    .pricing__item {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 @media (max-width:450px) {
