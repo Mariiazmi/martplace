@@ -1983,6 +1983,7 @@
     padding-bottom: 120px;
     background-color: #eff1f5;
     &__box {
+        padding: 25px 50px 55px;
         max-width: 555px;
         margin: 0 auto;
         border-radius: 4px;
@@ -1995,7 +1996,8 @@
             border-bottom: 1px solid #ececec;
         }
         &-form {
-            padding: 25px 50px 55px;
+            padding-top: 25px;
+            
         }
     }
     &__title {

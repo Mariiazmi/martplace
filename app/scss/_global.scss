@@ -395,8 +395,15 @@ button {
         }
         &:hover {
             a, span {
-               text-decoration: underline; 
+               text-decoration: underline;
+               
             }
+        }
+        &:last-child {
+            &:hover a, span{
+                text-decoration: none;
+            }
+            
         }
     }
 }
