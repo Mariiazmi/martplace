@@ -1,12 +1,4 @@
 @media (max-width:1050px) {
-    .footer__col-medium {
-        min-width: 100%;
-    }
-    .footer__icons-address:before {
-        top: 6px;
-    }
-}
-@media (max-width:1050px) {
     header {
         .general__input {
             min-width: 100%;
@@ -17,6 +9,39 @@
     }
     .header__bottom-inner {
         justify-content: center;
+    }
+    .footer__col-medium {
+        min-width: 100%;
+    }
+    .footer__icons-address:before {
+        top: 6px;
+    }
+}
+@media (max-width:970px) {
+    .work__step-item {
+        justify-content: center;
+        img {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .work__step-reverse {
+        .btn {
+            margin-bottom: 20px;
+        }
+        img {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+    .work__step-info {
+        max-width: 100%;
+        text-align: center;
+    }
+    .work__step-reverse {
+        img {
+            order: 0;
+        }
     }
 }
 @media (max-width:775px) {
@@ -97,6 +122,9 @@
     }
     .footer__inner {
         justify-content: space-between;
+    }
+    .login__box {
+        padding: 20px;
     }
 }
 @media (max-width:450px) {
