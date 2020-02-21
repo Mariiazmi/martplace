@@ -1997,7 +1997,7 @@
         }
         &-form {
             padding-top: 25px;
-            
+
         }
     }
     &__title {
@@ -2046,6 +2046,9 @@
                 text-decoration: underline;
             }
         }
+    }
+    .left__side-text {
+        text-align: left;
     }
 }
 // end login
