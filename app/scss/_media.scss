@@ -2,7 +2,12 @@
     .contact__inner {
        justify-content: center; 
     }
-    
+    .news__inner {
+        justify-content: center;
+    }
+    .news__item {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width:1145px) {
@@ -13,6 +18,10 @@
     }
     .pricing__inner {
         justify-content: center;
+    }
+    .blog__aside,
+    .blog__content {
+        max-width: 100%;
     }
 }
 @media (max-width:1050px) {
@@ -178,6 +187,7 @@
     .contact__item {
         padding: 25px 21px 25px;
     }
+    
 }
 @media (max-width:395px) {
     .header__top-inner,
@@ -187,6 +197,12 @@
         .btn {
             margin-right: 10px;
         }
+    }
+    .pagination__list a, .pagination__list span {
+        padding: 5px 18px;
+    }
+    .blog__item-list li {
+        display: block;
     }
 }
 @media (min-width:551px) {
