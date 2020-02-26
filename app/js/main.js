@@ -4,6 +4,24 @@ $(function(){
       });
     $('.feed__inner').slick({
         slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 1145,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 775,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
       });
 
     $(".product__item-star").rateYo({

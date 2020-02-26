@@ -45,7 +45,8 @@ button {
 	flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+    flex: 0 0 auto;
+    
 }
 // 
 .container {
@@ -160,6 +161,11 @@ button {
         padding: 20px 30px;
         padding-bottom: 35px;
         border-bottom: 1px solid #ececec;
+        &-col-left {
+            .product__item-category {
+                display: none;
+            }
+        }
     }
     &-title {
         margin: 0;
@@ -207,6 +213,12 @@ button {
         padding: 15px 30px;
         &-left {
             display: flex;
+            justify-content: space-between;
+        }
+        &-right {
+            .product__item-price {
+                display: none;
+            }
         }
     }
     &-price {
@@ -256,6 +268,12 @@ button {
     .lnr-bubble {
         display: none;
     }
+    .product__item-info-col-middle {
+        .product__item-star,
+        .product__item-star-number {
+            display: none;
+        }
+    }
 }
 
 .slick-arrow {
@@ -293,6 +311,7 @@ button {
     width: 100%;
     & input {
         padding: 15px 30px;
+        padding-right: 100px;
         width: 100%;
         border: 1px solid #d9dfe5;
         border-radius: 30px;
